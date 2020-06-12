@@ -87,10 +87,6 @@ class RelevanceModel:
             )
 
             # Compile model
-            """
-            NOTE:
-            Related Github issue: https://github.com/tensorflow/probability/issues/519
-            """
             self.model.compile(
                 optimizer=optimizer,
                 loss=loss_fn,

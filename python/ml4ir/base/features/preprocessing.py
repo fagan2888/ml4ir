@@ -34,13 +34,9 @@ class PreprocessingMap:
 @tf.function
 def preprocess_text(feature_tensor, remove_punctuation=False, to_lower=False):
     """
-    String preprocessing function that removes punctuation and converts strings to lower case
-    based on the arguments.
-
     Args:
         feature_tensor: input feature tensor of type tf.string
-        remove_punctuation: bool; whether to remove punctuation characters from strings
-        to_lower: bool; whether to convert string to lower case
+        remove_pun
 
     Returns:
         processed float tensor
